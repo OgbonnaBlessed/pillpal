@@ -24,13 +24,13 @@ export default function HomeScreen() {
       }),
     ]).start();
 
-    // const timer = setTimeout(() => {
-    //   router.replace('/auth')
-    // }, 2000);
+    const timer = setTimeout(() => {
+      router.replace('/auth')
+    }, 2000);
 
-    // return () => {
-    //   clearTimeout(timer);
-    // };
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
